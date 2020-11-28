@@ -1,0 +1,42 @@
+.M-order {
+  background-color: $assistBg;
+  overflow: auto;
+}
+
+#app .active {
+  background-color: $mainBg;
+}
+
+.M-order .van-tabs__wrap {
+  border-radius: 8px;
+  padding: $margin 0;
+  background-color: $mainBg;
+}
+
+.M-order .van-sticky--fixed {
+  margin: 0 $margin;
+  background-color: $assistBg;
+}
+
+.M-order .van-sticky--fixed .van-tabs__wrap {
+  background-color: transparent;
+}
+
+.M-order .van-tabs__nav {
+  background-color: transparent;
+}
+
+.M-order .M-layout .M-layout_content {
+  background-color: $assistBg;
+  padding: 0;
+}
+
+.M-order .M-order_list {
+  margin: $margin auto;
+}
+
+.M-order .M-layout {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}

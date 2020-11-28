@@ -1,0 +1,167 @@
+.M-login {
+  color: $defaultColor;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.M-login .van-icon {
+  cursor: pointer;
+}
+
+.M-getCode {
+  height: 28px;
+  color: $activeColor;
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
+  border-radius: 5px;
+}
+
+/******************************** 登录顶部栏 **********************************/
+
+.M-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.M-logo img {
+  width: 100%;
+  display: block;
+}
+
+.M-logo_name {
+  font-size: 14px;
+  color: $mainColor;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.M-link_home {
+  font-weight: 700;
+  font-size: 14px;
+  color: $mainColor;
+}
+
+/*********************************** 登录结语栏 *******************************/
+
+.M-faceLanguage {
+  margin-top: 120px;
+  font-weight: 700;
+  padding: 0 $assistMargin;
+}
+
+.M-interface_ch {
+  font-size: 24px;
+  font-weight: 700;
+  color: $defaultColor;
+  margin-bottom: 40px;
+  animation: fontMoveLeft .6s ease;
+}
+
+.M-interface_en {
+  font-size: 16px;
+  font-weight: 700;
+  color: $inActiveColor;
+  text-align: right;
+  animation: fontMoveRight 1s ease;
+}
+
+/********************************** 登录结语栏 ********************************/
+.M-userInterface {
+  margin-top: 56px;
+  animation: moveTop 1s ease;
+}
+
+.M-userInterface .van-field__label>span {
+  color: $defaultColor;
+}
+
+.M-forget {
+  display: flex;
+  height: 56px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: $assistMargin;
+  color: $inActiveColor;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.M-interface_btn {
+  margin-top: 20px;
+  padding: 0 $assistMargin;
+}
+
+.van-field__clear,
+.van-field__right-icon {
+  margin-right: 4px;
+}
+
+.M-register .M-register_btn,
+.M-interface_btn .van-button {
+  background: $mainColor;
+  border-color: $mainColor;
+  color: $activeColor;
+}
+
+
+/******************************** 注册界面栏 **********************************/
+
+.M-register {
+  padding: $assistMargin;
+}
+
+.M-register_title {
+  margin: 0px auto 18px;
+  padding-left: $assistMargin;
+  font-size: 18px;
+}
+
+.M-register .van-cell__title {
+  width: 3.6em;
+}
+
+.M-register_btn {
+  margin: 32px auto 20px;
+}
+
+.M-register_btn.M-inactive {
+  text-align: center;
+  font-size: 14px;
+  color: $inActiveColor;
+}
+
+@keyframes fontMoveLeft {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fontMoveRight {
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveTop {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

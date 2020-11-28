@@ -1,0 +1,86 @@
+.M-person {
+  background-color: $assistBg;
+}
+
+.M-userImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  float: right;
+  overflow: hidden;
+}
+
+.M-person .van-field__control {
+  color: $inActiveColor;
+}
+
+.M-upload {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+
+  .van-uploader__wrapper {
+    height: 100%;
+  }
+
+  .van-uploader__upload {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.M-infoMain {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.M-profileUserInfo {
+  margin-left: $margin * 2;
+  width: calc(100% - 130px);
+}
+
+.M-userName {
+  font-size: 22px;
+  margin-top: $margin;
+  text-align: left;
+  color: $mainColor;
+}
+
+.M-userDesc {
+  font-size: 13px;
+  text-align: left;
+  margin-top: $margin;
+  text-align: justify;
+  text-justify: newspaper;
+  word-break: break-all;
+  overflow: hidden;
+  color: $inActiveColor;
+}
+
+.M-profile_list {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px 0 rgba(31, 35, 41, .05);
+  position: relative;
+  z-index: 99999;
+}
+
+.M-profile_list .van-cell__left-icon {
+  color: $mainColor;
+}
+
+.M-field {
+  padding: 0;
+}

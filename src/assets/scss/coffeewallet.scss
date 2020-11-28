@@ -1,0 +1,69 @@
+#app>.M-coffeewallet {
+  height: 100%;
+}
+
+.M-coffeewallet {
+  padding: 46px $margin 60px;
+  background-color: $assistBg;
+  box-sizing: border-box;
+  position: relative;
+
+  /********************************* 优惠券栏 *********************************/
+
+  .M-walletItem {
+    padding: $margin;
+    background-color: $mainBg;
+    margin-top: $margin;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 2px 16px 0 rgba(31, 35, 41, .05);
+  }
+
+  .M-walletItem:first-of-type {
+    margin-top: 0;
+  }
+
+  .M-walletPrice {
+    width: 80px;
+    height: 80px;
+    color: $activeColor;
+    font-size: 16px;
+    background-image: linear-gradient(to right, $mainColor, $goodsPriceColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .M-walletTip {
+    width: 120px;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: justify;
+    text-justify: newspaper;
+    word-break: break-all;
+  }
+
+  .M-walletTip>span {
+    font-size: 13px;
+    color: $inActiveColor;
+  }
+
+  .M-couponAmount {
+    font-size: 12px;
+    color: $mainColor;
+  }
+
+  .M-couponAmount>span {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .van-checkbox__icon--checked .van-icon {
+    color: $activeColor;
+    background-color: $goodsPriceColor;
+    border-color: $goodsPriceColor;
+  }
+}

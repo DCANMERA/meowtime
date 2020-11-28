@@ -1,0 +1,392 @@
+.M-detail {
+  background-color: $assistBg;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 50px;
+  overflow: auto;
+}
+
+/******************************** 详情顶部栏 **********************************/
+
+.M-detail_nav {
+  width: 100%;
+  background-color: transparent;
+}
+
+.M-detail_nav::after {
+  border: none;
+}
+
+.M-detail_nav .van-sticky {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  transition: top .2s ease;
+}
+
+.tabActive .van-sticky {
+  background-color: hsla(0, 0%, 100%, .8);
+  transform: translateY(50px);
+  top: -50px;
+  transition: transform .3s ease;
+  backdrop-filter: blur($margin);
+  position: fixed;
+}
+
+.M-detail_nav .van-tabs__wrap {
+  padding: 0 $margin;
+}
+
+.M-detail_nav .van-tabs__wrap,
+.M-detail_nav .van-tabs__nav {
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.M-detail_nav .van-icon {
+  color: $activeColor;
+  font-size: 13px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabActive .van-icon {
+  color: $inActiveColor;
+}
+
+.M-detail_nav .van-tab {
+  flex: unset;
+  margin: 0 $margin;
+  color: $defaultColor;
+}
+
+.M-detail_nav .van-tab,
+.M-detail_nav .van-tabs__line {
+  visibility: hidden;
+}
+
+.tabActive .van-tab,
+.tabActive .van-tabs__line {
+  visibility: visible;
+}
+
+.M-detail_left,
+.M-detail_right {
+  position: absolute;
+  top: calc(50% - 15px);
+}
+
+.M-detail_left {
+  left: 0;
+}
+
+.M-detail_right {
+  right: 0;
+}
+
+//////////////////////////////////////// 分享弹出
+
+.M-share_popUp {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.M-share_popUp .van-grid-item__icon+.van-grid-item__text {
+  font-size: 14px;
+  color: $defaultColor;
+}
+
+.M-share_popUp .van-grid-item__content::after {
+  border: none;
+}
+
+/***************************** 图片banner栏 ***********************************/
+
+.M-detail_banner {
+  width: 100%;
+  height: 280px;
+}
+
+.M-detail_banner .custom-indicator {
+  border-radius: $margin;
+  background-color: rgba($color: $defaultColor, $alpha: .7);
+  padding: $margin/2 $margin;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  font-size: 12px;
+  color: $mainBg;
+}
+
+.M-detail img {
+  height: 100%;
+}
+
+/*********************************** 商品价格栏 *******************************/
+
+.M-detail_top {
+  background-color: $mainBg;
+  border-radius: 5px;
+  margin: $margin;
+  padding: $margin;
+}
+
+.M-detail_pricee {
+  margin-bottom: $margin;
+}
+
+.M-detail_pricee_now {
+  font-size: 18px;
+  font-weight: 700;
+  color: $goodsPriceColor;
+}
+
+.M-detail_pricee_pass {
+  font-size: 8px;
+  color: $inActiveColor;
+  text-decoration: line-through;
+  margin-left: $margin;
+}
+
+.M-detail_tit {
+  color: $defaultColor;
+  font-size: 14px;
+  margin-bottom: $margin;
+}
+
+.M-detail_tip {
+  font-size: 13px;
+  color: $inActiveColor;
+  margin-right: $margin;
+}
+
+.M-detail_sell {
+  color: $inActiveColor;
+  font-size: 8px;
+}
+
+/******************************** 优惠及折扣栏 *********************************/
+
+.M-detail_common {
+  margin: $margin;
+  padding: $margin;
+  background-color: $mainBg;
+  border-radius: 5px;
+}
+
+.M-detail_discount {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+}
+
+.M-giveaway {
+  margin-right: $margin;
+  background-color: $discountColor;
+}
+
+.M-giveaway_desc {
+  font-size: 13px;
+}
+
+.M-giveaway_arrow {
+  position: absolute;
+  right: $margin;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+////////////////////////////////////// 优惠及折扣弹出区
+
+.M-discount_popUp {
+  position: relative;
+  padding: $assistMargin;
+}
+
+.M-discount_p_tip {
+  text-align: center;
+  font-size: 14px;
+  color: $mainColor;
+  display: flex;
+  margin-top: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.M-discount_p_tip>span {
+  border-bottom: 3px solid $mainColor;
+  padding: 6px 0;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.M-discount_p_aleat {
+  font-weight: 700;
+  font-size: 14px;
+  color: $defaultColor;
+  padding: $margin 0;
+}
+
+.M-discount_ctn_item {
+  padding: $margin;
+  border-radius: 5px;
+  background-color: rgba($color: $discountColor, $alpha: .1);
+}
+
+.M-discount_ctn_item:last-of-type {
+  margin-bottom: 200px;
+}
+
+.M-discount_ctn_item_t {
+  font-size: 14px;
+  color: $goodsPriceColor;
+  font-weight: 700;
+}
+
+.M-discount_ctn_item_icon {
+  font-size: 8px;
+  color: $activeColor;
+  background-color: $discountColor;
+  margin-top: -1px;
+}
+
+.M-discount_ctn_item_c {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: $margin;
+}
+
+.M-discount_ctn_item_con {
+  margin-left: $margin;
+  font-size: 14px;
+}
+
+.M-discount_end {
+  font-size: 8px;
+  color: $inActiveColor;
+  transform: scale(0.2);
+  margin-left: 4px;
+}
+
+.M-discount_time {
+  margin-top: 5px;
+  font-size: 8px;
+  color: $inActiveColor;
+}
+
+.M-discount_ctn_item_b {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: $margin;
+}
+
+.M-discount_ctn_item_img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.M-discount_name {
+  font-size: 14px;
+  color: $defaultColor;
+}
+
+.M-discount_adreename {
+  font-size: 8px;
+  color: $inActiveColor;
+  margin-top: 8px;
+}
+
+/******************************* 商品规格选择栏 ********************************/
+
+.M-detail_select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: $margin;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid $assistBg;
+  font-size: 12px;
+}
+
+.M-select_con {
+  position: relative;
+  display: flex;
+  font-size: 13px;
+}
+
+.M-detail_shipping {
+  display: flex;
+  align-items: center;
+  margin-top: $margin;
+  font-size: 13px;
+}
+
+/******************************** 商品详情栏 **********************************/
+
+.M-productDetails {
+  position: relative;
+}
+
+.M-productDetails_tip {
+  font-size: 14px;
+  color: $defaultColor;
+  margin-bottom: $margin;
+  font-weight: 700;
+}
+
+.M-productDetails_content_tip {
+  font-size: 13px;
+  color: $defaultColor;
+  margin-bottom: $margin;
+}
+
+.M-productDetails_content_desc {
+  width: 100%;
+  text-align: justify;
+  text-justify: newspaper;
+  overflow: hidden;
+  font-size: 13px;
+  color: $defaultColor;
+  line-height: 1.5;
+}
+
+.M-productDetails_content_desc>img {
+  margin-bottom: $margin;
+}
+
+/********************************** 商品结算栏 ********************************/
+
+.M-goods_action {
+  padding: 5px $margin;
+  box-sizing: border-box;
+}
+
+.M-goods_action .van-icon {
+  color: $inActiveColor;
+}
+
+.M-goods_action .active,
+.M-goods_action .active .van-goods-action-icon__icon,
+.M-goods_action .active .van-goods-action-icon {
+  color: $mainColor;
+}
+
+.M-goods_action .active .van-info {
+  background-color: $mainColor;
+}

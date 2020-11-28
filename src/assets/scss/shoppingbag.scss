@@ -1,0 +1,131 @@
+.M-shoppingbag {
+  background-color: $assistBg;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.M-shoppingbag .van-pull-refresh {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.van-checkbox__icon--checked .van-icon {
+  color: $activeColor;
+  background: $mainColor;
+  border-color: $mainColor;
+}
+
+/******************************* 购物袋顶部栏 **********************************/
+
+.M-shoppingbag_nav .van-nav-bar__text,
+.M-shoppingbag_nav .van-icon {
+  color: $mainColor;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.M-shoppingbag_nav .van-nav-bar__title {
+  color: $mainColor;
+}
+
+/***************************** 订单有数据区域 **********************************/
+
+.M-shoppingbag_main {
+  margin-top: 50px;
+  padding-bottom: 100px;
+  background-color: $assistBg;
+  border: 1px solid transparent;
+}
+
+.M-shoppingbag_advertising {
+  box-sizing: border-box;
+  height: 160px;
+  margin: $margin;
+  margin-right: $margin;
+  background: url('../images/coupon.jpg') no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.M-shoppingbag_product {
+  padding: $margin;
+}
+
+.M-product_item {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: $mainBg;
+  margin-bottom: $margin;
+}
+
+.M-product_item .van-swipe-cell__right>button {
+  height: 100%;
+}
+
+.M-product_cell_item {
+  padding: $margin * 2 $margin;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.M-product_check {
+  margin-right: $margin;
+}
+
+.M-rules_name {
+  background-color: rgba($color: $assistBg, $alpha: .6);
+  padding: 8px;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+
+.M-product_rules_arrow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.van-stepper--round .van-stepper__plus {
+  background-color: $mainColor;
+}
+
+/***************************** 订单提交与删除栏 ********************************/
+
+.M-submitorder {
+  bottom: 49px;
+  border-bottom: 1px solid $assistBg;
+}
+
+.M-delorder .van-submit-bar__text {
+  flex: 1;
+  padding-right: 0.32rem;
+  color: $defaultColor;
+  text-align: right;
+  visibility: hidden;
+}
+
+.M-submitorder .van-submit-bar__price {
+  margin-left: 5px;
+  color: $goodsPriceColor;
+}
+
+.M-submitorder .van-button {
+  height: 38px;
+  font-size: 16px;
+}
+
+.M-submitorder .van-submit-bar__button--danger {
+  background: $mainColor;
+}

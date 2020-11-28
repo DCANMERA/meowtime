@@ -1,0 +1,58 @@
+.M-coupon {
+  padding-top: 46px;
+  background-color: $assistBg;
+  box-sizing: border-box;
+
+  .M-couponMain {
+    padding: 0 $margin $margin;
+    background-color: $assistBg;
+  }
+
+  .M-coupon_item {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: $margin;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: $mainBg;
+
+  }
+
+  .M-couponImg {
+    width: 100%;
+    height: 220px;
+    margin-bottom: $margin;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+
+  .M-couponCon {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .M-couponTip {
+    align-self: start;
+    padding: $margin;
+  }
+
+  .M-couponMainTip {
+    font-size: 14px;
+    color: $defaultColor;
+  }
+
+  .M-couponSubTip {
+    font-size: 12px;
+    color: $inActiveColor;
+    margin-top: 5px;
+  }
+
+  .M-couponTime {
+    color: $inActiveColor;
+    margin: $margin $margin 0 0;
+    font-size: 12px;
+  }
+}

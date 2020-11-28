@@ -1,0 +1,207 @@
+/********************************** 首页广告栏 ********************************/
+
+.M-banner {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  margin-top: 46px;
+}
+
+.M-banner .van-swipe {
+  height: 100%;
+  overflow: hidden;
+}
+
+.M-banner .van-swipe__indicator--active {
+  width: 15px;
+  border-radius: $margin;
+  background-color: $mainColor;
+}
+
+.M-description {
+  position: absolute;
+  right: 10%;
+  bottom: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $activeColor;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.M_description_act {
+  animation: loop 1s ease;
+}
+
+/****************************** 主功能栏 **************************************/
+
+.M-sectorization {
+  padding: 20px;
+  background-color: $mainBg;
+}
+
+/****************************** 地址与用户区域 *********************************/
+
+.M-nav {
+  height: 78px;
+}
+
+.M-nav::after {
+  border: none;
+}
+
+.M-homeAddress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.M-icon {
+  width: 20px;
+  color: $mainColor;
+  margin: 2px 5px 0 0;
+}
+
+.M-icon .van-icon {
+  width: 100%;
+  font-size: 18px;
+  color: $mainColor;
+}
+
+.M-address_detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.M-shop {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#app .M-select_shop {
+  width: calc(100% - $margin);
+  height: 60%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 2px $margin 0 rgba(31, 35, 41, .2);
+}
+
+.M-select_shop .van-picker__confirm {
+  color: $defaultColor;
+}
+
+.M-distance {
+  font-size: 12px;
+  color: $inActiveColor;
+}
+
+.M-distance_ml {
+  margin-left: 8px;
+}
+
+.M-user {
+  font-weight: 700;
+  text-align: right;
+}
+
+.M-hello {
+  font-size: 13px;
+  color: $inActiveColor;
+}
+
+.M-home_userName {
+  font-size: 18px;
+  color: $defaultColor;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/********************************** 功能指引区域 *******************************/
+
+.M-guide .M-guide_icon {
+  font-size: 26px;
+  color: $mainColor;
+}
+
+.M-guide_text {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.M-guide .van-grid-item__content {
+  padding: $assistMargin 0;
+}
+
+/********************************* 首页商品栏 *********************************/
+.M-product {
+  padding-bottom: 40px;
+  background-color: $assistBg;
+}
+
+.M-home_goods {
+  padding-top: $margin * 2;
+}
+
+.M-goods_tip {
+  position: relative;
+  width: 70px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 $margin * 3;
+  margin: 0 auto $margin * 2;
+  overflow: hidden;
+  color: $defaultColor;
+}
+
+.M-goods_tip::before,
+.M-goods_tip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  background-image: url(../images/sprite.png);
+}
+
+.M-goods_tip::before {
+  background-position: 0 0;
+  width: 25px;
+  height: 20px;
+  left: 0;
+}
+
+.M-goods_tip::after {
+  background-position: -25px 0;
+  width: 25px;
+  height: 20px;
+  right: 0;
+}
+
+.M-goods_content {
+  padding: 0 $margin;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.M-goods_hot .van-icon {
+  font-size: 26px;
+}
+
+// 轮播动画
+
+@keyframes loop {
+  from {
+    transform: translateY(100px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,48 @@
+.M-secure {
+  .M-cell .van-cell {
+    margin-bottom: $margin;
+  }
+
+  .M-logout {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 $margin;
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+  }
+
+  .M-secure .van-button {
+    color: $activeColor;
+    background-color: $mainColor;
+  }
+
+  .M-form {
+    padding: $margin;
+  }
+
+  .M-formTitle {
+    font-size: 18px;
+    color: $mainColor;
+    text-align: center;
+    margin-top: $margin;
+  }
+
+  .M-form .van-cell {
+    margin-top: $margin * 2;
+  }
+
+  .M-commit_btn {
+    margin: 80px auto 20px;
+  }
+
+  .M-notive {
+    top: 46px;
+  }
+
+  .van-button {
+    color: $activeColor;
+    background-color: $mainColor;
+    border: 1px solid $mainColor;
+  }
+}

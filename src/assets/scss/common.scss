@@ -1,0 +1,253 @@
+#app {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+.M-detail,
+.M-pay,
+.M-order,
+.M-main,
+.M-home,
+.M-menu,
+.M-shoppingbag,
+.M-profile,
+.M-person,
+.M-coupon {
+  width: 100%;
+  height: 100%;
+  color: $defaultColor;
+  position: relative;
+  background-color: $assistBg;
+}
+
+.van-pull-refresh {
+  overflow: unset;
+}
+
+
+/******************************** 顶部区域 ************************************/
+
+.M-header {
+  width: 100%;
+  height: 46px;
+  box-shadow: 0 2px 16px 0 rgba(31, 35, 41, .05);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+}
+
+.M-header .van-search {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: $margin;
+}
+
+.van-search .van-icon__image {
+  width: 28px;
+  height: 28px;
+  margin-right: $margin;
+}
+
+.M-header .van-search__action {
+  padding-right: 0;
+}
+
+.van-nav-bar .van-icon,
+.van-nav-bar__text {
+  color: $defaultColor;
+}
+
+.van-nav-bar__title {
+  font-weight: 700;
+  color: $mainColor;
+}
+
+.van-tabs__line {
+  background-color: $mainColor;
+}
+
+
+/********************************* 底部导航栏 *********************************/
+
+.M-tab_bar {
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  font-size: 12px;
+  cursor: pointer;
+  position: fixed;
+  box-shadow: 0 2px 16px 0 rgba(31, 35, 41, .05);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.M-tab_bar .van-tabbar-item {
+  color: $inActiveColor;
+}
+
+.M-tab_bar .van-tabbar-item__icon {
+  font-size: 18px;
+}
+
+.M-tab_bar .van-tabbar-item.van-tabbar-item--active {
+  color: $mainColor;
+}
+
+.M-tab_text {
+  font-size: 8px;
+}
+
+/********************************* 空状态 *************************************/
+
+.van-empty {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+
+.van-empty .van-empty__image {
+  width: 180px;
+  height: 180px;
+}
+
+.van-empty .van-empty__description {
+  text-align: center;
+  padding: 0;
+  color: $inActiveColor;
+}
+
+.M-empty_btn {
+  width: 140px;
+  background-color: $mainBg;
+  color: $mainColor;
+  font-size: 14px;
+  border: 1px solid $mainColor;
+  height: unset;
+  padding: $margin 0;
+}
+
+/********************************** 确认按钮 **********************************/
+
+.van-dialog__confirm,
+.van-dialog__confirm:active {
+  color: $mainColor;
+}
+
+
+/*********************************** 适配区域 *********************************/
+@media screen and (max-width: 375px) {
+  .M-home .M-banner {
+    height: 230px;
+  }
+
+  #app>.M-coffeewallet {
+    height: unset !important;
+  }
+
+  .M-profile_info {
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 768px) {
+  .M-home .M-banner {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  #app,
+  body,
+  html,
+  .M-login {
+    margin: 0 auto;
+  }
+
+  .M-home .M-banner {
+    height: 480px;
+  }
+
+  .M-detail_banner {
+    height: 480px !important;
+  }
+
+  .M-coupon .M-couponImg {
+    height: 375px !important;
+  }
+
+  .M-shoppingbag_advertising {
+    height: 300px !important;
+  }
+
+  .M-profile_list .van-cell {
+    padding: $assistMargin * 2.5 $margin;
+  }
+
+  .M-faceLanguage {
+    margin-top: 30vh !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #app,
+  body,
+  html,
+  .M-login {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .M-home .M-banner {
+    height: 768px;
+  }
+
+  .M-detail_banner {
+    height: 780px !important;
+  }
+
+  .M-shoppingbag_advertising {
+    height: 400px !important;
+  }
+
+  .M-coupon .M-couponImg {
+    height: 468px !important;
+  }
+
+  .M-profile_info {
+    padding: $assistMargin * 3.5 !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .M-profileBg {
+    background-size: contain !important;
+  }
+
+  .M-profile_list .van-cell {
+    padding: $assistMargin * 1.5 $margin !important;
+  }
+
+  .M-login {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .M-faceLanguage {
+    margin-top: 35vh !important;
+  }
+}

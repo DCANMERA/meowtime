@@ -1,0 +1,26 @@
+.M-likeLsit {
+  padding-top: $margin;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.M-goodsLike {
+  color: $goodsPriceColor;
+  font-size: 16px;
+}
+
+.M-deleteLike {
+  font-size: 22px;
+  color: $inActiveColor;
+}
+
+.M-like .M-goods_gocart {
+  border: none;
+  background-color: unset;
+}
+
+.M-like .M-goods_hot {
+  top: 5px;
+  right: 5px;
+}

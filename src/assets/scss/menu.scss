@@ -1,0 +1,36 @@
+.M-menu {
+  background-color: $assistBg;
+}
+
+/**************************88****** 菜单页顶部栏 *******************************/
+
+.M-menu_goods {
+  margin-top: 100px;
+  padding-bottom: 40px;
+}
+
+.M-menu_goodsTabs .van-tabs__wrap {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/***************************** 菜单页商品栏 ************************************/
+
+.M-menu_goods .M-goods {
+  padding: $margin;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: $assistBg;
+}
+
+.M-menu_goods .M-goods_hot .van-icon {
+  font-size: 26px;
+}
+
+.M-menu_goods .van-tag--primary {
+  background-color: $goodsPriceColor;
+}
