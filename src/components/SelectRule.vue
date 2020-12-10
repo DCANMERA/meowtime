@@ -213,7 +213,6 @@
   }
 
   .M-specification .van-goods-action {
-    width: calc(100% - $margin);
     position: static;
     margin-top: 70px;
   }
