@@ -154,7 +154,6 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
-    padding: $margin;
   }
 
   .M-rule_title {

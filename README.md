@@ -6,7 +6,7 @@
 - 建议使用谷歌浏览器查看或开发，iPhone 6/7/8 屏幕尺寸为 375px 宽和 667px 高是最佳效果。
 - 如果感觉还不错的话，请赏个 ★Star 鼓励一哈，后续会持续更新和优化。
 
-[在线效果演示](https://github.com/Dcanmera/meowtime)
+[在线效果演示](https://dcanmera.github.io/meovwtime/)
 
 # 项目架构
 

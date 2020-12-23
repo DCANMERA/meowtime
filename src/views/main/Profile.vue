@@ -16,7 +16,6 @@
       <div class="M-infoMain">
         <div class="M-userImg"
              :style="{backgroundImage: 'url('+userInfo.userImg+')'}">
-
         </div>
         <div class="M-profileUserInfo">
           <div class="M-userName">{{userInfo.nickName}}</div>

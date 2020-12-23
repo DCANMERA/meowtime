@@ -160,7 +160,11 @@
       this.sids = this.$route.query.sids.split('-');
 
       // 获取所有的优惠券
-      this.couponData = JSON.parse(localStorage.getItem('__$'));
+      if (JSON.parse(localStorage.getItem('__$'))) {
+        this.couponData = JSON.parse(localStorage.getItem('__$'));
+      } else {
+        this.couponData = this.$store.state.wallet;
+      }
 
       // 根据sids获取购物袋数据
       this.getShopbagBySids();

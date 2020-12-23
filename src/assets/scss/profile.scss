@@ -64,7 +64,7 @@
 
 .M-profileUserInfo {
   margin-left: $margin * 2;
-  width: calc(100% - 130px);
+  flex: auto;
 }
 
 .M-userName {
