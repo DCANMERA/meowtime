@@ -78,7 +78,7 @@
                slot="right"
                @click="linkUser">
             <div class="M-home_userName">
-              Hi, {{$store.state.userInfo.nickName}}
+              Hi, {{userInfo.nickName}}
             </div>
             <div class="M-hello">咖啡会让人脑洞大开哟</div>
           </div>
@@ -159,6 +159,9 @@
 
     data() {
       return {
+
+        // 用户信息
+        userInfo: '',
 
         // 下拉刷新bool
         pullDownToRefresh: false,
@@ -263,17 +266,22 @@
       this.getUserInfo();
     },
 
+    watch: {
+      '$store.state.userInfo'(payload) {
+        this.userInfo = payload
+      }
+    },
+
     methods: {
 
       // 获取用户名
       getUserInfo() {
-        let data = this.$getUserInfo();
-        this.$store.commit('changeInfo', data);
+        this.$store.commit('changeInfo', this.$getUserInfo());
       },
 
       // 根据store的信息跳转指定页
       linkUser() {
-        this.$store.state.userInfo.isLogin ?
+        this.userInfo.isLogin ?
           this.$goPage('Profile') :
           this.$goPage('Login');
       },

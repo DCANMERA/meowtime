@@ -2,7 +2,7 @@ export default {
 
   // 修改用户信息
   changeInfo(state, data) {
-    this.state.userInfo = data;
+    state.userInfo = data;
   },
 
   // 修改钱包信息

@@ -193,6 +193,7 @@
               this.LoginData.phone = '';
               this.LoginData.password = '';
               localStorage.setItem('__tk', res.data.token);
+              this.$store.commit('changeInfo', this.$getUserInfo());
               let __$ = localStorage.getItem('__$');
               if (!localStorage.getItem('__$')) {
                 localStorage.setItem('__$', JSON.stringify(wallet));
