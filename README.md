@@ -8,7 +8,7 @@
 
 <a href="https://dcanmera.github.io/meowtime/" target="_blank">在线效果演示</a>
 
-### 如遇 Vue 项目显示一直加载或浏览器控制台出现: Failed to load resource: net::ERR_SSL_PROTOCOL_ERROR(SSL 协议错误)
+### 如遇 Vue 项目显示一直加载、图片加载失败或浏览器控制台出现: Failed to load resource: net::ERR_SSL_PROTOCOL_ERROR(SSL 协议错误)
 
 - 请设置浏览器-->隐私设置和安全性-->不安全内容-->允许 即可或<a href="https://www.cnblogs.com/wqkeep/p/13748676.html" target="_blank">参考这篇文档</a>
 
