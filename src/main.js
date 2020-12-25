@@ -101,7 +101,7 @@ Vue.prototype.commonApi = commonApi;
 Vue.prototype.appkey = 'U2FsdGVkX19WSQ59Cg+Fj9jNZPxRC5y0xB1iV06BeNA=';
 
 //配置请求基础路径
-axios.defaults.baseURL = 'http://47.106.197.108:10002';
+axios.defaults.baseURL = 'http://api.kele8.cn/agent/http://47.106.197.108:10002';
 
 //axios拦截器，在发起请求之前执行
 axios.interceptors.request.use(config => {
